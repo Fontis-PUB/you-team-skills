@@ -5,8 +5,8 @@
 1. Create a folder inside the appropriate area:
 
 ```bash
-mkdir claude-code-skills/01-gestao-trafego/my-new-skill
-touch claude-code-skills/01-gestao-trafego/my-new-skill/SKILL.md
+mkdir 01-gestao-trafego/my-new-skill
+touch 01-gestao-trafego/my-new-skill/SKILL.md
 ```
 
 2. Every `SKILL.md` must start with YAML frontmatter:

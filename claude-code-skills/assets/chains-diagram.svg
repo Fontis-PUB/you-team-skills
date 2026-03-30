@@ -1,0 +1,246 @@
+<svg width="1200" height="560" viewBox="0 0 1200 560" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a18"/>
+      <stop offset="100%" stop-color="#0f0b22"/>
+    </linearGradient>
+    <filter id="node-glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Arrow markers per chain -->
+    <marker id="arrow-trafego" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f97316"/>
+    </marker>
+    <marker id="arrow-lancamento" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#a855f7"/>
+    </marker>
+    <marker id="arrow-comercial" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#06b6d4"/>
+    </marker>
+    <marker id="arrow-conteudo" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#22c55e"/>
+    </marker>
+    <marker id="arrow-estrategia" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#eab308"/>
+    </marker>
+    <marker id="arrow-operacoes" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#ec4899"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="560" fill="url(#bg2)" rx="12"/>
+  <rect width="1200" height="560" fill="none" stroke="#1e1b3a" stroke-width="1" rx="12"/>
+
+  <!-- Title -->
+  <text x="600" y="38" text-anchor="middle"
+    font-family="ui-sans-serif,system-ui,sans-serif" font-size="15" font-weight="600"
+    fill="#6b7280" letter-spacing="2">HANDOFF CHAINS&#160;&#160;/&#160;&#160;CADEIAS DE TRABALHO</text>
+  <rect x="200" y="46" width="800" height="1" fill="#1e1b3a"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CHAIN 1: TRÁFEGO (orange) y=80 -->
+  <!-- ═══════════════════════════════════════════ -->
+  <text x="16" y="102" font-family="ui-monospace,monospace" font-size="10" font-weight="700" fill="#f97316" letter-spacing="1">TRÁFEGO</text>
+
+  <!-- Nodes -->
+  <g filter="url(#node-glow)">
+    <!-- meta-análise -->
+    <rect x="100" y="82" width="120" height="32" rx="16" fill="#1a1025" stroke="#f97316" stroke-width="1.5"/>
+    <text x="160" y="102" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#f97316">meta-análise</text>
+    <!-- copy-criativo -->
+    <rect x="250" y="82" width="120" height="32" rx="16" fill="#1a1025" stroke="#f97316" stroke-width="1.5"/>
+    <text x="310" y="102" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#f97316">copy-criativo</text>
+    <!-- audiência -->
+    <rect x="400" y="82" width="100" height="32" rx="16" fill="#1a1025" stroke="#f97316" stroke-width="1.5"/>
+    <text x="450" y="102" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#f97316">audiência</text>
+    <!-- relatório -->
+    <rect x="530" y="82" width="100" height="32" rx="16" fill="#1a1025" stroke="#f97316" stroke-width="1.5"/>
+    <text x="580" y="102" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#f97316">relatório</text>
+    <!-- financeiro -->
+    <rect x="660" y="82" width="95" height="32" rx="16" fill="#1a1025" stroke="#f97316" stroke-width="1"/>
+    <text x="707" y="102" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#f97316" opacity="0.7">financeiro</text>
+  </g>
+  <!-- Arrows -->
+  <line x1="220" y1="98" x2="247" y2="98" stroke="#f97316" stroke-width="1.5" marker-end="url(#arrow-trafego)" opacity="0.8"/>
+  <line x1="370" y1="98" x2="397" y2="98" stroke="#f97316" stroke-width="1.5" marker-end="url(#arrow-trafego)" opacity="0.8"/>
+  <line x1="500" y1="98" x2="527" y2="98" stroke="#f97316" stroke-width="1.5" marker-end="url(#arrow-trafego)" opacity="0.8"/>
+  <line x1="630" y1="98" x2="657" y2="98" stroke="#f97316" stroke-width="1.5" marker-end="url(#arrow-trafego)" opacity="0.5"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CHAIN 2: LANÇAMENTO (purple) y=160 -->
+  <!-- ═══════════════════════════════════════════ -->
+  <text x="16" y="178" font-family="ui-monospace,monospace" font-size="10" font-weight="700" fill="#a855f7" letter-spacing="1">LANÇAMENTO</text>
+
+  <g filter="url(#node-glow)">
+    <rect x="100" y="158" width="80" height="32" rx="16" fill="#1a1025" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="140" y="178" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#a855f7">persona</text>
+
+    <rect x="210" y="158" width="70" height="32" rx="16" fill="#1a1025" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="245" y="178" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#a855f7">oferta</text>
+
+    <rect x="310" y="158" width="70" height="32" rx="16" fill="#1a1025" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="345" y="178" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#a855f7">página</text>
+
+    <rect x="410" y="158" width="60" height="32" rx="16" fill="#1a1025" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="440" y="178" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#a855f7">copy</text>
+
+    <rect x="500" y="158" width="95" height="32" rx="16" fill="#1a1025" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="547" y="178" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#a855f7">cronograma</text>
+
+    <rect x="625" y="158" width="80" height="32" rx="16" fill="#1a1025" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="665" y="178" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#a855f7">emails CPL</text>
+
+    <rect x="735" y="158" width="105" height="32" rx="16" fill="#1a1025" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="787" y="178" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#a855f7">emails carrinho</text>
+
+    <rect x="870" y="158" width="80" height="32" rx="16" fill="#1a1025" stroke="#a855f7" stroke-width="1"/>
+    <text x="910" y="178" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#a855f7" opacity="0.7">métricas</text>
+  </g>
+  <line x1="180" y1="174" x2="207" y2="174" stroke="#a855f7" stroke-width="1.5" marker-end="url(#arrow-lancamento)" opacity="0.8"/>
+  <line x1="280" y1="174" x2="307" y2="174" stroke="#a855f7" stroke-width="1.5" marker-end="url(#arrow-lancamento)" opacity="0.8"/>
+  <line x1="380" y1="174" x2="407" y2="174" stroke="#a855f7" stroke-width="1.5" marker-end="url(#arrow-lancamento)" opacity="0.8"/>
+  <line x1="470" y1="174" x2="497" y2="174" stroke="#a855f7" stroke-width="1.5" marker-end="url(#arrow-lancamento)" opacity="0.8"/>
+  <line x1="595" y1="174" x2="622" y2="174" stroke="#a855f7" stroke-width="1.5" marker-end="url(#arrow-lancamento)" opacity="0.8"/>
+  <line x1="705" y1="174" x2="732" y2="174" stroke="#a855f7" stroke-width="1.5" marker-end="url(#arrow-lancamento)" opacity="0.8"/>
+  <line x1="840" y1="174" x2="867" y2="174" stroke="#a855f7" stroke-width="1.5" marker-end="url(#arrow-lancamento)" opacity="0.8"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CHAIN 3: COMERCIAL (cyan) y=240 -->
+  <!-- ═══════════════════════════════════════════ -->
+  <text x="16" y="256" font-family="ui-monospace,monospace" font-size="10" font-weight="700" fill="#06b6d4" letter-spacing="1">COMERCIAL</text>
+
+  <g filter="url(#node-glow)">
+    <rect x="100" y="236" width="70" height="32" rx="16" fill="#1a1025" stroke="#06b6d4" stroke-width="1.5"/>
+    <text x="135" y="256" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#06b6d4">funil</text>
+
+    <rect x="200" y="236" width="80" height="32" rx="16" fill="#1a1025" stroke="#06b6d4" stroke-width="1.5"/>
+    <text x="240" y="256" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#06b6d4">chatbot</text>
+
+    <rect x="310" y="236" width="100" height="32" rx="16" fill="#1a1025" stroke="#06b6d4" stroke-width="1.5"/>
+    <text x="360" y="256" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#06b6d4">atendimento</text>
+
+    <rect x="440" y="236" width="85" height="32" rx="16" fill="#1a1025" stroke="#06b6d4" stroke-width="1.5"/>
+    <text x="482" y="256" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#06b6d4">proposta</text>
+
+    <rect x="555" y="236" width="85" height="32" rx="16" fill="#1a1025" stroke="#06b6d4" stroke-width="1.5"/>
+    <text x="597" y="256" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#06b6d4">follow-up</text>
+
+    <rect x="670" y="236" width="60" height="32" rx="16" fill="#1a1025" stroke="#06b6d4" stroke-width="1.5"/>
+    <text x="700" y="256" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#06b6d4">CRM</text>
+
+    <rect x="760" y="236" width="65" height="32" rx="16" fill="#1a1025" stroke="#06b6d4" stroke-width="1"/>
+    <text x="792" y="256" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#06b6d4" opacity="0.7">CS</text>
+  </g>
+  <line x1="170" y1="252" x2="197" y2="252" stroke="#06b6d4" stroke-width="1.5" marker-end="url(#arrow-comercial)" opacity="0.8"/>
+  <line x1="280" y1="252" x2="307" y2="252" stroke="#06b6d4" stroke-width="1.5" marker-end="url(#arrow-comercial)" opacity="0.8"/>
+  <line x1="410" y1="252" x2="437" y2="252" stroke="#06b6d4" stroke-width="1.5" marker-end="url(#arrow-comercial)" opacity="0.8"/>
+  <line x1="525" y1="252" x2="552" y2="252" stroke="#06b6d4" stroke-width="1.5" marker-end="url(#arrow-comercial)" opacity="0.8"/>
+  <line x1="640" y1="252" x2="667" y2="252" stroke="#06b6d4" stroke-width="1.5" marker-end="url(#arrow-comercial)" opacity="0.8"/>
+  <line x1="730" y1="252" x2="757" y2="252" stroke="#06b6d4" stroke-width="1.5" marker-end="url(#arrow-comercial)" opacity="0.5"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CHAIN 4: CONTEÚDO (green) y=318 -->
+  <!-- ═══════════════════════════════════════════ -->
+  <text x="16" y="334" font-family="ui-monospace,monospace" font-size="10" font-weight="700" fill="#22c55e" letter-spacing="1">CONTEÚDO</text>
+
+  <g filter="url(#node-glow)">
+    <rect x="100" y="314" width="80" height="32" rx="16" fill="#1a1025" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="140" y="334" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#22c55e">persona</text>
+
+    <rect x="210" y="314" width="100" height="32" rx="16" fill="#1a1025" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="260" y="334" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#22c55e">concorrentes</text>
+
+    <rect x="340" y="314" width="80" height="32" rx="16" fill="#1a1025" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="380" y="334" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#22c55e">pauta SEO</text>
+
+    <rect x="450" y="314" width="95" height="32" rx="16" fill="#1a1025" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="497" y="334" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#22c55e">calendário</text>
+
+    <rect x="575" y="314" width="80" height="32" rx="16" fill="#1a1025" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="615" y="334" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#22c55e">copy</text>
+
+    <rect x="685" y="314" width="80" height="32" rx="16" fill="#1a1025" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="725" y="334" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#22c55e">roteiro</text>
+
+    <rect x="795" y="314" width="70" height="32" rx="16" fill="#1a1025" stroke="#22c55e" stroke-width="1"/>
+    <text x="830" y="334" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#22c55e" opacity="0.7">blog</text>
+  </g>
+  <line x1="180" y1="330" x2="207" y2="330" stroke="#22c55e" stroke-width="1.5" marker-end="url(#arrow-conteudo)" opacity="0.8"/>
+  <line x1="310" y1="330" x2="337" y2="330" stroke="#22c55e" stroke-width="1.5" marker-end="url(#arrow-conteudo)" opacity="0.8"/>
+  <line x1="420" y1="330" x2="447" y2="330" stroke="#22c55e" stroke-width="1.5" marker-end="url(#arrow-conteudo)" opacity="0.8"/>
+  <line x1="545" y1="330" x2="572" y2="330" stroke="#22c55e" stroke-width="1.5" marker-end="url(#arrow-conteudo)" opacity="0.8"/>
+  <line x1="655" y1="330" x2="682" y2="330" stroke="#22c55e" stroke-width="1.5" marker-end="url(#arrow-conteudo)" opacity="0.8"/>
+  <line x1="765" y1="330" x2="792" y2="330" stroke="#22c55e" stroke-width="1.5" marker-end="url(#arrow-conteudo)" opacity="0.5"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CHAIN 5: ESTRATÉGIA (yellow) y=396 -->
+  <!-- ═══════════════════════════════════════════ -->
+  <text x="16" y="412" font-family="ui-monospace,monospace" font-size="10" font-weight="700" fill="#eab308" letter-spacing="1">ESTRATÉGIA</text>
+
+  <g filter="url(#node-glow)">
+    <rect x="100" y="392" width="95" height="32" rx="16" fill="#1a1025" stroke="#eab308" stroke-width="1.5"/>
+    <text x="147" y="412" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#eab308">diagnóstico</text>
+
+    <rect x="225" y="392" width="65" height="32" rx="16" fill="#1a1025" stroke="#eab308" stroke-width="1.5"/>
+    <text x="257" y="412" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#eab308">KPIs</text>
+
+    <rect x="320" y="392" width="105" height="32" rx="16" fill="#1a1025" stroke="#eab308" stroke-width="1.5"/>
+    <text x="372" y="412" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#eab308">precificação</text>
+
+    <rect x="455" y="392" width="85" height="32" rx="16" fill="#1a1025" stroke="#eab308" stroke-width="1.5"/>
+    <text x="497" y="412" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#eab308">forecast</text>
+
+    <rect x="570" y="392" width="65" height="32" rx="16" fill="#1a1025" stroke="#eab308" stroke-width="1.5"/>
+    <text x="602" y="412" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#eab308">pitch</text>
+
+    <rect x="665" y="392" width="95" height="32" rx="16" fill="#1a1025" stroke="#eab308" stroke-width="1"/>
+    <text x="712" y="412" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#eab308" opacity="0.7">processos</text>
+  </g>
+  <line x1="195" y1="408" x2="222" y2="408" stroke="#eab308" stroke-width="1.5" marker-end="url(#arrow-estrategia)" opacity="0.8"/>
+  <line x1="290" y1="408" x2="317" y2="408" stroke="#eab308" stroke-width="1.5" marker-end="url(#arrow-estrategia)" opacity="0.8"/>
+  <line x1="425" y1="408" x2="452" y2="408" stroke="#eab308" stroke-width="1.5" marker-end="url(#arrow-estrategia)" opacity="0.8"/>
+  <line x1="540" y1="408" x2="567" y2="408" stroke="#eab308" stroke-width="1.5" marker-end="url(#arrow-estrategia)" opacity="0.8"/>
+  <line x1="635" y1="408" x2="662" y2="408" stroke="#eab308" stroke-width="1.5" marker-end="url(#arrow-estrategia)" opacity="0.5"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CHAIN 6: OPERAÇÕES (pink) y=474 -->
+  <!-- ═══════════════════════════════════════════ -->
+  <text x="16" y="490" font-family="ui-monospace,monospace" font-size="10" font-weight="700" fill="#ec4899" letter-spacing="1">OPERAÇÕES</text>
+
+  <g filter="url(#node-glow)">
+    <rect x="100" y="470" width="95" height="32" rx="16" fill="#1a1025" stroke="#ec4899" stroke-width="1.5"/>
+    <text x="147" y="490" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#ec4899">diagnóstico</text>
+
+    <rect x="225" y="470" width="80" height="32" rx="16" fill="#1a1025" stroke="#ec4899" stroke-width="1.5"/>
+    <text x="265" y="490" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#ec4899">produto</text>
+
+    <rect x="335" y="470" width="55" height="32" rx="16" fill="#1a1025" stroke="#ec4899" stroke-width="1.5"/>
+    <text x="362" y="490" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#ec4899">RH</text>
+
+    <rect x="420" y="470" width="100" height="32" rx="16" fill="#1a1025" stroke="#ec4899" stroke-width="1.5"/>
+    <text x="470" y="490" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#ec4899">automação</text>
+
+    <rect x="550" y="470" width="90" height="32" rx="16" fill="#1a1025" stroke="#ec4899" stroke-width="1.5"/>
+    <text x="595" y="490" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#ec4899">financeiro</text>
+
+    <rect x="670" y="470" width="65" height="32" rx="16" fill="#1a1025" stroke="#ec4899" stroke-width="1.5"/>
+    <text x="702" y="490" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#ec4899">dados</text>
+
+    <rect x="765" y="470" width="55" height="32" rx="16" fill="#1a1025" stroke="#ec4899" stroke-width="1"/>
+    <text x="792" y="490" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#ec4899" opacity="0.7">CS</text>
+  </g>
+  <line x1="195" y1="486" x2="222" y2="486" stroke="#ec4899" stroke-width="1.5" marker-end="url(#arrow-operacoes)" opacity="0.8"/>
+  <line x1="305" y1="486" x2="332" y2="486" stroke="#ec4899" stroke-width="1.5" marker-end="url(#arrow-operacoes)" opacity="0.8"/>
+  <line x1="390" y1="486" x2="417" y2="486" stroke="#ec4899" stroke-width="1.5" marker-end="url(#arrow-operacoes)" opacity="0.8"/>
+  <line x1="520" y1="486" x2="547" y2="486" stroke="#ec4899" stroke-width="1.5" marker-end="url(#arrow-operacoes)" opacity="0.8"/>
+  <line x1="640" y1="486" x2="667" y2="486" stroke="#ec4899" stroke-width="1.5" marker-end="url(#arrow-operacoes)" opacity="0.8"/>
+  <line x1="735" y1="486" x2="762" y2="486" stroke="#ec4899" stroke-width="1.5" marker-end="url(#arrow-operacoes)" opacity="0.5"/>
+
+  <!-- Footer -->
+  <rect x="0" y="533" width="1200" height="1" fill="#1e1b3a"/>
+  <text x="600" y="550" text-anchor="middle"
+    font-family="ui-sans-serif,system-ui,sans-serif" font-size="11"
+    fill="#374151">Output of one skill = input of the next&#160;&#160;·&#160;&#160;O output de uma skill é o input da próxima</text>
+</svg>

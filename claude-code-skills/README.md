@@ -1,34 +1,51 @@
-# 56 Skills Claude Code — Seu Time Completo de Negócio
+<div align="center">
+  <img src="assets/banner.svg" width="100%" alt="you-team-skills — 56 Claude Code Skills for Business">
+</div>
 
-> 56 especialistas que trabalham juntos, passam contexto entre si e nunca perdem informação. Instale no Claude Code e tenha um time inteiro operando em minutos.
+<div align="center">
 
-```
-56 profissionais  ·  8 áreas  ·  6.256 linhas de instrução  ·  17+ frameworks  ·  6 cadeias de handoff
-```
+[![Skills](https://img.shields.io/badge/56_Skills-Claude_Code-7c3aed?style=for-the-badge&logoColor=white)](https://github.com/fontiss/claude-code-skills)
+[![Areas](https://img.shields.io/badge/8_Areas-Business-9333ea?style=for-the-badge&logoColor=white)](https://github.com/fontiss/claude-code-skills)
+[![Chains](https://img.shields.io/badge/6_Handoff_Chains-Integrated-a855f7?style=for-the-badge&logoColor=white)](https://github.com/fontiss/claude-code-skills)
+[![License](https://img.shields.io/badge/License-MIT-06b6d4?style=for-the-badge&logoColor=white)](LICENSE)
+[![Free](https://img.shields.io/badge/$0-Forever-22c55e?style=for-the-badge&logoColor=white)](https://github.com/fontiss/claude-code-skills)
+
+</div>
 
 ---
 
-## O que é isso
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Um repositório open source com 56 skills para o Claude Code. Cada skill é um especialista com instruções detalhadas, frameworks reais, benchmarks do mercado brasileiro e templates de output prontos.
+### What is this
+
+56 specialists that work together, pass context between them, and never lose information. Install in Claude Code and have a complete business team operating in minutes.
+
+The differentiator: they are not isolated tools. They are an **integrated team** — when one skill identifies a problem outside its area, it automatically hands off to the right skill, with all the context needed. The output of one is the input of the next.
+
+</td>
+<td width="50%" valign="top">
+
+### O que é isso
+
+56 especialistas que trabalham juntos, passam contexto entre si e nunca perdem informação. Instale no Claude Code e tenha um time inteiro operando em minutos.
 
 O diferencial: elas não são ferramentas isoladas. São um **time integrado** — quando uma skill identifica um problema fora da sua área, ela faz handoff automático para a skill certa, com todo o contexto necessário. O output de uma é o input da próxima.
 
+</td>
+</tr>
+</table>
+
 ---
 
-## Instalação
-
-### Pré-requisito
-
-Ter o [Claude Code](https://docs.anthropic.com/en/docs/claude-code) instalado.
-
-### Instalar todas as skills
+## Install in 30s / Instale em 30s
 
 ```bash
-# 1. Clone o repositório
+# Clone the repo / Clone o repositório
 git clone https://github.com/fontiss/claude-code-skills.git
 
-# 2. Copie todas as skills para o diretório do Claude Code
+# Copy all skills to Claude Code / Copie todas as skills para o Claude Code
 cp -r claude-code-skills/01-gestao-trafego/* ~/.claude/skills/
 cp -r claude-code-skills/02-estrategista-lancamento/* ~/.claude/skills/
 cp -r claude-code-skills/03-social-media-conteudo/* ~/.claude/skills/
@@ -38,52 +55,39 @@ cp -r claude-code-skills/06-estrategista-negocios/* ~/.claude/skills/
 cp -r claude-code-skills/07-design-identidade/* ~/.claude/skills/
 cp -r claude-code-skills/08-operacoes-produto/* ~/.claude/skills/
 
-# 3. Copie o orquestrador do time
+# Copy the team orchestrator / Copie o orquestrador do time
 cp claude-code-skills/TEAM.md ~/.claude/skills/
 ```
 
-### Instalar uma skill específica
-
-```bash
-# Exemplo: instalar apenas o analista de campanhas Meta
-cp -r claude-code-skills/01-gestao-trafego/meta-analise-campanha ~/.claude/skills/
-```
-
-### Estrutura de cada skill
-
-```
-nome-da-skill/
-└── SKILL.md
-```
-
-Cada `SKILL.md` contém:
-- **Frontmatter YAML** — `name` + `description` (o Claude Code usa isso para acionar a skill automaticamente)
-- **Instruções** — framework, coleta de dados, output estruturado, regras de negócio
-- **Integração com o Time** — de quem recebe contexto, para quem passa o bastão, protocolo de handoff
+> **No coding required. / Não precisa saber programar.**
+> Skills are `.md` files that Claude Code reads automatically. / As skills são arquivos `.md` que o Claude Code lê automaticamente.
 
 ---
 
-## Como usar
+## How to Use / Como Usar
 
-### Modo 1: Descrever o que precisa (mais natural)
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Abra o Claude Code e diga o que quer. A skill é acionada automaticamente pelo `description` no frontmatter.
+**Mode 1 — Describe what you need**
+
+Just open Claude Code and describe the problem. The right skill activates automatically.
 
 ```
-"Analisa essa campanha de Meta Ads, gastei R$5K e quero saber se tá bom"
-→ Aciona: meta-analise-campanha
+"Analyze this Meta Ads campaign,
+ I spent $2K, is it performing well?"
+→ Triggers: meta-analise-campanha
 
-"Monta um cronograma pro meu lançamento, carrinho abre dia 15/05"
-→ Aciona: lancamento-cronograma
+"Create a launch timeline,
+ cart opens May 15th"
+→ Triggers: lancamento-cronograma
 
-"Cria 3 variações de legenda pra esse post de carrossel"
-→ Aciona: instagram-copy
-
-"Me ajuda a montar uma proposta comercial pra esse cliente"
-→ Aciona: comercial-proposta
+"Run a full business diagnosis"
+→ Triggers: TEAM.md → all areas
 ```
 
-### Modo 2: Rodar o comando direto
+**Mode 2 — Run the command directly**
 
 ```
 /meta-analise-campanha
@@ -92,224 +96,343 @@ Abra o Claude Code e diga o que quer. A skill é acionada automaticamente pelo `
 /negocios-diagnostico
 ```
 
-### Modo 3: Rodar o time completo
+</td>
+<td width="50%" valign="top">
+
+**Modo 1 — Descreva o que precisa**
+
+Abra o Claude Code e descreva o problema. A skill certa é acionada automaticamente.
 
 ```
-"Faz um diagnóstico completo do meu negócio e monta um plano de ação"
-→ Aciona: TEAM.md (orquestrador) → negocios-diagnostico → skills por área conforme score
+"Analisa essa campanha de Meta Ads,
+ gastei R$2K, tá bom?"
+→ Aciona: meta-analise-campanha
+
+"Monta um cronograma pro meu lançamento,
+ carrinho abre dia 15/05"
+→ Aciona: lancamento-cronograma
+
+"Faz um diagnóstico completo do negócio"
+→ Aciona: TEAM.md → todas as áreas
 ```
 
-### O que acontece quando você roda uma skill
+**Modo 2 — Rode o comando direto**
 
-1. **A skill coleta os dados** — pergunta o que falta (ou usa o que você já forneceu)
-2. **Analisa com frameworks e benchmarks** — compara seus números com referências do mercado BR
-3. **Entrega output estruturado** — tabelas, semáforos 🟢🟡🔴, checklists, planos de ação
-4. **Faz handoff se necessário** — se identificou um problema que outra skill resolve, passa o bastão com contexto
+```
+/meta-analise-campanha
+/lancamento-cronograma
+/whatsapp-atendimento
+/negocios-diagnostico
+```
 
-### Exemplo real de handoff
+</td>
+</tr>
+</table>
+
+---
+
+## The Team / O Organograma
+
+<details>
+<summary><strong>01. Traffic Management / Gestão de Tráfego — 7 specialists</strong></summary>
+
+| Skill | Role / Função | Delivers / Entrega |
+|-------|--------------|-------------------|
+| `meta-analise-campanha` | Meta Ads Analyst | Diagnosis with traffic-light scoring, BR benchmarks, 72h action plan |
+| `meta-relatorio-performance` | Meta Performance Report | Professional client report with period comparisons |
+| `meta-copy-criativo` | Meta Creative Copywriter | 3+ variations with AIDA/PAS/BAB/4U frameworks |
+| `meta-audiencia` | Meta Audience Strategist | Funnel audience map with LAL and exclusions |
+| `google-analise-campanha` | Google Ads Analyst | Search/Display/YouTube/PMax diagnosis |
+| `google-relatorio` | Google Performance Report | Report with Quality Score and search terms |
+| `google-copy` | Google Ads Copywriter | RSAs with character count + extensions |
+
+</details>
+
+<details>
+<summary><strong>02. Launch Strategist / Estrategista de Lançamento — 8 specialists</strong></summary>
+
+| Skill | Role / Função | Delivers / Entrega |
+|-------|--------------|-------------------|
+| `lancamento-cronograma` | Timeline Manager | Timeline by model (PLF/Webinar/Challenge/Meteoric) |
+| `lancamento-copy` | Launch Copywriter | Copy for all phases (capture, CPL, cart, VSL) |
+| `lancamento-emails-cpl` | CPL Email Specialist | Full sequence: invite, reminder, replay |
+| `lancamento-emails-carrinho` | Cart Email Specialist | 12 emails in 7 days with daily triggers |
+| `lancamento-metricas` | Metrics Analyst | Performance dashboard + post-launch debrief |
+| `lancamento-oferta` | Offer Architect | Value stack, anchoring, bonuses, guarantee |
+| `lancamento-pagina` | Page Builder | Capture LP and sales page structure |
+| `lancamento-pos-venda` | Post-Sale Manager | Onboarding, NPS survey, reactivation |
+
+</details>
+
+<details>
+<summary><strong>03. Social Media & Content / Social Media & Conteúdo — 7 specialists</strong></summary>
+
+| Skill | Role / Função | Delivers / Entrega |
+|-------|--------------|-------------------|
+| `instagram-copy` | Instagram Copywriter | Captions with 3 variations and 6 hook types |
+| `instagram-calendario` | Editorial Planner | Full month with AEAC framework |
+| `instagram-roteiro` | Reels Scriptwriter | Scripts with HDPM structure (Hook/Dev/PlotTwist/Moral) |
+| `instagram-hashtag` | Hashtag Strategist | Volume mix (high/medium/niche) with alternating sets |
+| `conteudo-pauta-seo` | SEO Content Planner | Keyword research, search intent, full outline |
+| `conteudo-blog` | Blog Writer | Complete SEO-optimized articles |
+| `conteudo-script-video` | Video Scriptwriter | Scripts for YouTube, VSL, and webinars |
+
+</details>
+
+<details>
+<summary><strong>04. Commercial Manager / Gestor Comercial — 7 specialists</strong></summary>
+
+| Skill | Role / Função | Delivers / Entrega |
+|-------|--------------|-------------------|
+| `whatsapp-atendimento` | WhatsApp Closer | 5-step script + objection handling templates |
+| `whatsapp-disparos` | Broadcast Specialist | Segmented campaigns with schedule |
+| `whatsapp-chatbot` | Chatbot Architect | Flows with decision tree and human handoff |
+| `whatsapp-crm` | WhatsApp CRM Manager | Pipeline with labels, metrics, and daily routine |
+| `comercial-proposta` | Proposal Writer | Professional proposal with 3 plans and anchoring |
+| `comercial-crm` | Pipeline Manager | CRM structure with fields, stages, and automations |
+| `comercial-follow-up` | Follow-up Specialist | 7-touchpoint cadence over 21 days |
+
+</details>
+
+<details>
+<summary><strong>05. Marketing & Growth / Marketing & Crescimento — 7 specialists</strong></summary>
+
+| Skill | Role / Função | Delivers / Entrega |
+|-------|--------------|-------------------|
+| `marketing-funil` | Funnel Strategist | Complete funnel with reverse calculator |
+| `marketing-email` | Email Marketing Specialist | Sequences (welcome, nurture, re-engagement, abandon) |
+| `marketing-persona` | Persona/ICP Researcher | Full profile with real pains, desires, and phrases |
+| `marketing-concorrentes` | Competitive Analyst | Competitive map with opportunities |
+| `marketing-seo` | SEO Strategist | Audit + 6-month roadmap + topic clusters |
+| `marketing-campanha` | Campaign Planner | Integrated multichannel campaign with schedule |
+| `influencer` | Influencer Manager | Selection, brief, contract, and metrics |
+
+</details>
+
+<details>
+<summary><strong>06. Business Strategist / Estrategista de Negócios — 7 specialists</strong></summary>
+
+| Skill | Role / Função | Delivers / Entrega |
+|-------|--------------|-------------------|
+| `negocios-diagnostico` | Diagnostic Consultant | A-F health score per area + SWOT + 90-day plan |
+| `negocios-precificacao` | Pricing Specialist | Cost/value/competitive analysis with 3 plans |
+| `negocios-proposta` | Consulting Proposal Writer | Proposal with diagnosis, methodology, and phases |
+| `negocios-processos` | Process Documenter | SOPs, flows, and operational playbooks |
+| `negocios-kpis` | KPI Definer | Dashboard by business model + review routine |
+| `negocios-forecasting` | Forecast Analyst | Projections with 3 scenarios + sensitivity analysis |
+| `negocios-pitch` | Pitch Deck Builder | Deck for investors/clients (10-12 slides) |
+
+</details>
+
+<details>
+<summary><strong>07. Design & Identity / Design & Identidade — 6 specialists</strong></summary>
+
+| Skill | Role / Função | Delivers / Entrega |
+|-------|--------------|-------------------|
+| `design-briefing` | Brief Writer | Full brief with moodboard, specs, and DON'Ts |
+| `design-brand` | Brand Documenter | Brand book: logo, colors, typography, voice |
+| `design-prompts-ia` | Visual Prompt Engineer | Prompts for Midjourney/DALL-E/SD with parameters |
+| `design-ui-ux` | UI/UX Specifier | Textual wireframes, user flows, design system |
+| `design-apresentacao` | Presentation Structurer | Slide-by-slide deck with presenter notes |
+| `design-naming` | Naming Specialist | 5+ options with evaluation, domain, and trademark |
+
+</details>
+
+<details>
+<summary><strong>08. Operations & Product / Operações & Produto — 7 specialists</strong></summary>
+
+| Skill | Role / Função | Delivers / Entrega |
+|-------|--------------|-------------------|
+| `ops-rh` | HR Manager | Job descriptions, 30-60-90 onboarding, review, IDP |
+| `ops-cs` | Customer Success Manager | Health score, stage playbooks, NPS |
+| `ops-documentacao` | Documentation Specialist | Wikis, knowledge bases, standardized templates |
+| `ops-financeiro` | Financial Controller | Management P&L, cash flow, budget, unit economics |
+| `ops-produto` | Product Manager | Roadmap, PRDs, user stories, RICE prioritization |
+| `ops-automacao` | Automation Architect | Make/Zapier/n8n flows with error handling and ROI |
+| `ops-dados` | Data Analyst | Cohort, funnel, Pareto, RFM analysis |
+
+</details>
+
+---
+
+## How the Team Works Together / Como o Time Trabalha Junto
+
+<div align="center">
+  <img src="assets/chains-diagram.svg" width="100%" alt="6 Handoff Chains — how skills connect">
+</div>
+
+<br>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Real handoff example:**
+
+You run `/meta-analise-campanha`. The diagnosis finds:
+
+```
+CPM: R$58 (benchmark R$25)   → 🔴 CRITICAL
+CTR: 0.4% (benchmark >1%)    → 🔴 CRITICAL
+Frequency: 6.2 (ideal 1.5-3) → 🔴 BURNT CREATIVE
+
+🔄 Next Team Step
+→ /meta-copy-criativo
+Context: CTR below 1% = weak hook.
+Frequency 6.2 confirms creative fatigue.
+Priority: 🔴 Urgent
+```
+
+You run `/meta-copy-criativo`. It already knows the problem is the hook and delivers 3 copy variations — then suggests `/meta-audiencia` if audiences also need adjustment.
+
+</td>
+<td width="50%" valign="top">
+
+**Exemplo real de handoff:**
 
 Você roda `/meta-analise-campanha`. O diagnóstico encontra:
 
 ```
-CPM: R$58 (benchmark R$25) → 🔴 CRÍTICO
-CTR: 0.4% (benchmark >1%) → 🔴 CRÍTICO  
-Frequência: 6.2 (ideal 1.5-3.0) → 🔴 CRIATIVO QUEIMADO
+CPM: R$58 (benchmark R$25)   → 🔴 CRÍTICO
+CTR: 0.4% (benchmark >1%)    → 🔴 CRÍTICO
+Frequência: 6.2 (ideal 1.5-3)→ 🔴 CRIATIVO QUEIMADO
 
 🔄 Próximo Passo do Time
-Handoff para: /meta-copy-criativo
-Contexto: CTR abaixo de 1% indica hook fraco. Frequência 6.2 confirma fadiga de criativo.
-Dados para passar: público-alvo, produto, tom de voz
+→ /meta-copy-criativo
+Contexto: CTR abaixo de 1% indica hook fraco.
+Frequência 6.2 confirma fadiga de criativo.
 Prioridade: 🔴 Urgente
 ```
 
-Você roda `/meta-copy-criativo`. Ela já sabe que o problema é o hook, usa a persona (se já foi rodada), e entrega 3 variações de copy. Depois sugere handoff para `/meta-audiencia` se os públicos também precisarem de ajuste.
+Você roda `/meta-copy-criativo`. Ela já sabe que o problema é o hook e entrega 3 variações de copy — depois sugere handoff para `/meta-audiencia` se os públicos também precisarem de ajuste.
+
+</td>
+</tr>
+</table>
 
 ---
 
-## O Organograma do Time
+## Ready-Made Workflows / Workflows Prontos
 
-### 01. Gestão de Tráfego — 7 profissionais
+<table>
+<tr>
+<th>Scenario / Cenário</th>
+<th>Skill Sequence / Sequência</th>
+</tr>
+<tr>
+<td>
 
-| Skill | Função | O que entrega |
-|-------|--------|---------------|
-| `meta-analise-campanha` | Analista de Campanhas Meta | Diagnóstico com semáforo, benchmarks BR, plano de ação 72h |
-| `meta-relatorio-performance` | Relatório de Performance Meta | Report profissional para clientes com comparativos |
-| `meta-copy-criativo` | Copywriter de Criativos Meta | 3+ variações com frameworks AIDA/PAS/BAB/4U |
-| `meta-audiencia` | Estrategista de Audiências Meta | Mapa de públicos por funil com LAL e exclusões |
-| `google-analise-campanha` | Analista de Campanhas Google | Diagnóstico Search/Display/YouTube/PMax |
-| `google-relatorio` | Relatório de Performance Google | Report com Quality Score e termos de pesquisa |
-| `google-copy` | Copywriter de Anúncios Google | RSAs com contagem de caracteres + extensões |
+**EN:** Launch a product from scratch
+**PT:** Lançar um produto do zero
 
-### 02. Estrategista de Lançamento — 8 profissionais
+</td>
+<td><code>persona → oferta → página → cronograma → copy → emails CPL → emails carrinho → audiência → copy criativo → métricas → pós-venda</code></td>
+</tr>
+<tr>
+<td>
 
-| Skill | Função | O que entrega |
-|-------|--------|---------------|
-| `lancamento-cronograma` | Gerente de Cronograma | Timeline por modelo (PLF/Webinário/Desafio/Meteórico) |
-| `lancamento-copy` | Copywriter de Lançamento | Copies para todas as fases (captura, CPL, carrinho, VSL) |
-| `lancamento-emails-cpl` | Especialista em Emails de CPL | Sequência completa: convite, lembrete, replay |
-| `lancamento-emails-carrinho` | Especialista em Emails de Carrinho | 12 emails em 7 dias com gatilhos por dia |
-| `lancamento-metricas` | Analista de Métricas | Dashboard de performance + debrief |
-| `lancamento-oferta` | Arquiteto de Oferta | Stack de valor, ancoragem, bônus, garantia |
-| `lancamento-pagina` | Construtor de Páginas | Estrutura de LP de captura e página de vendas |
-| `lancamento-pos-venda` | Gestor de Pós-Venda | Onboarding, pesquisa NPS, reativação |
+**EN:** Business is stuck
+**PT:** Empresa travada
 
-### 03. Social Media & Conteúdo — 7 profissionais
+</td>
+<td><code>diagnóstico → KPIs → funil → financeiro → processos → automação</code></td>
+</tr>
+<tr>
+<td>
 
-| Skill | Função | O que entrega |
-|-------|--------|---------------|
-| `instagram-copy` | Copywriter de Instagram | Legendas com 3 variações e 6 tipos de hook |
-| `instagram-calendario` | Planejador Editorial | Mês inteiro com framework AEAC |
-| `instagram-roteiro` | Roteirista de Reels | Roteiros com estrutura HDPM (Hook/Dev/PlotTwist/Moral) |
-| `instagram-hashtag` | Estrategista de Hashtags | Mix de volume (alta/média/nicho) com sets alternados |
-| `conteudo-pauta-seo` | Planejador de Pautas SEO | Keyword research, intenção de busca, outline completo |
-| `conteudo-blog` | Redator de Blog | Artigos completos otimizados para SEO |
-| `conteudo-script-video` | Roteirista de Vídeo | Scripts para YouTube, VSL e webinários |
+**EN:** Start in digital marketing
+**PT:** Começar no digital
 
-### 04. Gestor Comercial — 7 profissionais
+</td>
+<td><code>persona → concorrentes → precificação → funil → calendário → pauta SEO → WhatsApp atendimento</code></td>
+</tr>
+<tr>
+<td>
 
-| Skill | Função | O que entrega |
-|-------|--------|---------------|
-| `whatsapp-atendimento` | Closer de WhatsApp | Script em 5 etapas + templates de objeção |
-| `whatsapp-disparos` | Especialista em Disparos | Campanhas segmentadas com cronograma |
-| `whatsapp-chatbot` | Arquiteto de Chatbot | Fluxos com árvore de decisão e handoff humano |
-| `whatsapp-crm` | Gestor de CRM WhatsApp | Pipeline com etiquetas, métricas e rotina diária |
-| `comercial-proposta` | Redator de Propostas | Proposta profissional com 3 planos e ancoragem |
-| `comercial-crm` | Gestor de Pipeline | Estrutura de CRM com campos, etapas e automações |
-| `comercial-follow-up` | Especialista em Follow-up | Cadência de 7 touchpoints em 21 dias |
+**EN:** Scale paid traffic
+**PT:** Escalar tráfego pago
 
-### 05. Marketing & Crescimento — 7 profissionais
+</td>
+<td><code>meta-análise → audiência → copy criativo → relatório → financeiro</code></td>
+</tr>
+<tr>
+<td>
 
-| Skill | Função | O que entrega |
-|-------|--------|---------------|
-| `marketing-funil` | Estrategista de Funil | Funil completo com calculadora reversa |
-| `marketing-email` | Especialista em Email Marketing | Sequências (welcome, nutrição, reengajamento, abandono) |
-| `marketing-persona` | Pesquisador de Persona/ICP | Perfil completo com dores, desejos e frases reais |
-| `marketing-concorrentes` | Analista de Concorrência | Mapeamento competitivo com oportunidades |
-| `marketing-seo` | Estrategista de SEO | Auditoria + roadmap 6 meses + topic clusters |
-| `marketing-campanha` | Planejador de Campanhas | Campanha integrada multicanal com cronograma |
-| `influencer` | Gestor de Influenciadores | Seleção, briefing, contrato e métricas |
+**EN:** Build a sales team
+**PT:** Montar time comercial
 
-### 06. Estrategista de Negócios — 7 profissionais
+</td>
+<td><code>CRM → WhatsApp atendimento → chatbot → proposta → follow-up → CS</code></td>
+</tr>
+<tr>
+<td>
 
-| Skill | Função | O que entrega |
-|-------|--------|---------------|
-| `negocios-diagnostico` | Consultor de Diagnóstico | Health score A-F por área + SWOT + plano 90 dias |
-| `negocios-precificacao` | Especialista em Precificação | Análise custo/valor/competitivo com 3 planos |
-| `negocios-proposta` | Redator de Propostas de Consultoria | Proposta com diagnóstico, metodologia e fases |
-| `negocios-processos` | Documentador de Processos | SOPs, fluxos e playbooks operacionais |
-| `negocios-kpis` | Definidor de KPIs | Dashboard por modelo de negócio + rotina de review |
-| `negocios-forecasting` | Analista de Forecast | Projeções com 3 cenários + análise de sensibilidade |
-| `negocios-pitch` | Construtor de Pitch Deck | Deck para investidores/clientes (10-12 slides) |
+**EN:** Improve digital presence
+**PT:** Melhorar presença digital
 
-### 07. Design & Identidade — 6 profissionais
-
-| Skill | Função | O que entrega |
-|-------|--------|---------------|
-| `design-briefing` | Redator de Briefings | Briefing completo com moodboard, specs e DON'Ts |
-| `design-brand` | Documentador de Marca | Brand book com logo, cores, tipografia, tom de voz |
-| `design-prompts-ia` | Engenheiro de Prompts Visuais | Prompts para Midjourney/DALL-E/SD com parâmetros |
-| `design-ui-ux` | Especificador de UI/UX | Wireframes textuais, user flows, design system |
-| `design-apresentacao` | Estruturador de Apresentações | Deck slide a slide com notas de apresentador |
-| `design-naming` | Especialista em Naming | 5+ opções com avaliação, domínio e INPI |
-
-### 08. Operações & Produto — 7 profissionais
-
-| Skill | Função | O que entrega |
-|-------|--------|---------------|
-| `ops-rh` | Gestor de RH | Job descriptions, onboarding 30-60-90, avaliação, PDI |
-| `ops-cs` | Gestor de Customer Success | Health score, playbooks por estágio, NPS |
-| `ops-documentacao` | Documentador | Wikis, knowledge bases, templates padronizados |
-| `ops-financeiro` | Controller Financeiro | DRE gerencial, fluxo de caixa, budget, unit economics |
-| `ops-produto` | Product Manager | Roadmap, PRDs, user stories, priorização RICE |
-| `ops-automacao` | Arquiteto de Automações | Fluxos Make/Zapier/n8n com tratamento de erro e ROI |
-| `ops-dados` | Analista de Dados | Análise cohort, funil, Pareto, RFM |
-
-### Orquestrador — TEAM.md
-
-O "CEO" do time. Sabe quem faz o quê, quem passa o bastão pra quem, e monta planos integrados.
+</td>
+<td><code>persona → concorrentes → calendário → roteiro → hashtag → pauta SEO → blog</code></td>
+</tr>
+</table>
 
 ---
 
-## Como o time trabalha junto
+## What's Inside Each Skill / O que tem dentro de cada skill
 
-As skills não operam isoladas. Estão organizadas em **6 cadeias de trabalho**:
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### Cadeia de Tráfego
-```
-meta-analise-campanha
-  → [CTR baixo?] → meta-copy-criativo
-  → [CPM alto?] → meta-audiencia
-  → [CPA alto + CTR bom?] → lancamento-pagina
-  → [resultados prontos] → meta-relatorio-performance
-  → [investimento] → ops-financeiro
-```
+**Real frameworks** — AIDA, PAS, BAB, 4U for copy. BANT for qualification. RICE for product. HDPM for scripts. AEAC for editorial calendar. PASTOR for sales pages.
 
-### Cadeia de Lançamento
-```
-marketing-persona → lancamento-oferta → lancamento-pagina → lancamento-copy
-  → lancamento-cronograma → lancamento-emails-cpl → lancamento-emails-carrinho
-  → meta-audiencia → meta-copy-criativo → lancamento-metricas → lancamento-pos-venda
-```
+**Brazilian market benchmarks** — CPM R$15-40 for Meta Ads. CTR above 1% for feed. CPA below 30% of ticket. List conversion 1-3%. CPL presence above 30%.
 
-### Cadeia Comercial
-```
-marketing-funil → whatsapp-chatbot → whatsapp-atendimento → comercial-proposta
-  → comercial-follow-up → comercial-crm → whatsapp-crm → ops-cs
-```
+**Structured output templates** — Traffic-light tables 🟢🟡🔴, checklists, prioritized diagnostics, day-by-day schedules. Standardized markdown format.
 
-### Cadeia de Conteúdo
-```
-marketing-persona → marketing-concorrentes → conteudo-pauta-seo
-  → instagram-calendario → instagram-copy → instagram-roteiro
-  → instagram-hashtag → conteudo-blog → conteudo-script-video
-```
+**Golden rules** — "Frequency above 5 = run creative before anything else." "Lead without reply in 24h = dead lead." "Onboarding in 48h reduces refunds by 50%."
 
-### Cadeia Estratégica
-```
-negocios-diagnostico → negocios-kpis → negocios-precificacao
-  → negocios-forecasting → negocios-pitch → negocios-processos
-```
-
-### Cadeia de Operações
-```
-negocios-diagnostico → ops-produto → ops-rh → ops-documentacao
-  → ops-automacao → ops-financeiro → ops-dados → ops-cs
-```
-
----
-
-## Workflows prontos
-
-Cenários completos que acionam múltiplas skills em sequência:
-
-| Cenário | Sequência de Skills |
-|---------|-------------------|
-| "Quero lançar um produto do zero" | persona → oferta → página → cronograma → copy → emails CPL → emails carrinho → audiência → copy criativo → métricas → pós-venda |
-| "Minha empresa tá travada" | diagnóstico → KPIs → funil → financeiro → processos → automação |
-| "Quero começar no digital" | persona → concorrentes → precificação → funil → calendário → pauta SEO → WhatsApp atendimento |
-| "Quero escalar meu tráfego" | meta-análise → audiência → copy criativo → relatório → financeiro |
-| "Quero montar meu time comercial" | CRM → WhatsApp atendimento → chatbot → proposta → follow-up → CS |
-| "Preciso melhorar minha presença digital" | persona → concorrentes → calendário → roteiro → hashtag → pauta SEO → blog |
-
----
-
-## O que tem dentro de cada skill
-
-Cada SKILL.md contém:
+</td>
+<td width="50%" valign="top">
 
 **Frameworks reais** — AIDA, PAS, BAB, 4U para copy. BANT para qualificação. RICE para produto. HDPM para roteiros. AEAC para calendário editorial. PASTOR para página de vendas.
 
 **Benchmarks do mercado brasileiro** — CPM R$15-40 para Meta Ads. CTR acima de 1% para feed. CPA abaixo de 30% do ticket. Conversão de lista 1-3%. Presença em CPL acima de 30%.
 
-**Templates de output** — Tabelas com semáforo 🟢🟡🔴, checklists, diagnósticos com priorização, cronogramas dia a dia. Formato markdown padronizado.
+**Templates de output estruturado** — Tabelas com semáforo 🟢🟡🔴, checklists, diagnósticos com priorização, cronogramas dia a dia. Formato markdown padronizado.
 
 **Regras de ouro** — "Frequência acima de 5 = rode criativo antes de qualquer coisa." "Lead sem resposta em 24h = lead morto." "Onboarding em 48h reduz reembolso em 50%."
 
-**Integração com o time** — Cada skill sabe de quem recebe contexto, para quem passa o bastão, e o protocolo de handoff.
+</td>
+</tr>
+</table>
 
 ---
 
-## Perguntas frequentes
+## FAQ
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Do I need to know how to code?**
+No. Install, describe what you need, and the skill delivers the result.
+
+**Does it work on the free Claude Code plan?**
+Yes. Skills are `.md` files that Claude Code reads automatically.
+
+**Can I edit the skills?**
+Yes. It's open source. Edit, improve, add your own, fork it.
+
+**How much does it cost?**
+$0. Forever. No login, no deadline, no third-party platform.
+
+**How do I update?**
+```bash
+cd claude-code-skills && git pull
+```
+
+</td>
+<td width="50%" valign="top">
 
 **Preciso saber programar?**
 Não. Instala, descreve o que precisa, e a skill entrega o resultado.
@@ -328,86 +451,50 @@ R$0. Pra sempre. Sem login, sem prazo, sem plataforma de terceiro.
 cd claude-code-skills && git pull
 ```
 
+</td>
+</tr>
+</table>
+
 ---
 
-## Estrutura do repositório
+## Repository Structure / Estrutura do Repositório
 
 ```
 claude-code-skills/
 ├── README.md
-├── TEAM.md                              ← Orquestrador do time
-├── 01-gestao-trafego/
-│   ├── meta-analise-campanha/SKILL.md
-│   ├── meta-relatorio-performance/SKILL.md
-│   ├── meta-copy-criativo/SKILL.md
-│   ├── meta-audiencia/SKILL.md
-│   ├── google-analise-campanha/SKILL.md
-│   ├── google-relatorio/SKILL.md
-│   └── google-copy/SKILL.md
-├── 02-estrategista-lancamento/
-│   ├── lancamento-cronograma/SKILL.md
-│   ├── lancamento-copy/SKILL.md
-│   ├── lancamento-emails-cpl/SKILL.md
-│   ├── lancamento-emails-carrinho/SKILL.md
-│   ├── lancamento-metricas/SKILL.md
-│   ├── lancamento-oferta/SKILL.md
-│   ├── lancamento-pagina/SKILL.md
-│   └── lancamento-pos-venda/SKILL.md
-├── 03-social-media-conteudo/
-│   ├── instagram-copy/SKILL.md
-│   ├── instagram-calendario/SKILL.md
-│   ├── instagram-roteiro/SKILL.md
-│   ├── instagram-hashtag/SKILL.md
-│   ├── conteudo-pauta-seo/SKILL.md
-│   ├── conteudo-blog/SKILL.md
-│   └── conteudo-script-video/SKILL.md
-├── 04-gestor-comercial/
-│   ├── whatsapp-atendimento/SKILL.md
-│   ├── whatsapp-disparos/SKILL.md
-│   ├── whatsapp-chatbot/SKILL.md
-│   ├── whatsapp-crm/SKILL.md
-│   ├── comercial-proposta/SKILL.md
-│   ├── comercial-crm/SKILL.md
-│   └── comercial-follow-up/SKILL.md
-├── 05-marketing-crescimento/
-│   ├── marketing-funil/SKILL.md
-│   ├── marketing-email/SKILL.md
-│   ├── marketing-persona/SKILL.md
-│   ├── marketing-concorrentes/SKILL.md
-│   ├── marketing-seo/SKILL.md
-│   ├── marketing-campanha/SKILL.md
-│   └── influencer/SKILL.md
-├── 06-estrategista-negocios/
-│   ├── negocios-diagnostico/SKILL.md
-│   ├── negocios-precificacao/SKILL.md
-│   ├── negocios-proposta/SKILL.md
-│   ├── negocios-processos/SKILL.md
-│   ├── negocios-kpis/SKILL.md
-│   ├── negocios-forecasting/SKILL.md
-│   └── negocios-pitch/SKILL.md
-├── 07-design-identidade/
-│   ├── design-briefing/SKILL.md
-│   ├── design-brand/SKILL.md
-│   ├── design-prompts-ia/SKILL.md
-│   ├── design-ui-ux/SKILL.md
-│   ├── design-apresentacao/SKILL.md
-│   └── design-naming/SKILL.md
-└── 08-operacoes-produto/
-    ├── ops-rh/SKILL.md
-    ├── ops-cs/SKILL.md
-    ├── ops-documentacao/SKILL.md
-    ├── ops-financeiro/SKILL.md
-    ├── ops-produto/SKILL.md
-    ├── ops-automacao/SKILL.md
-    └── ops-dados/SKILL.md
+├── TEAM.md                              ← Team orchestrator / Orquestrador do time
+├── assets/
+│   ├── banner.svg                       ← Hero banner
+│   └── chains-diagram.svg               ← Handoff chains diagram
+├── 01-gestao-trafego/                   (7 skills)
+├── 02-estrategista-lancamento/          (8 skills)
+├── 03-social-media-conteudo/            (7 skills)
+├── 04-gestor-comercial/                 (7 skills)
+├── 05-marketing-crescimento/            (7 skills)
+├── 06-estrategista-negocios/            (7 skills)
+├── 07-design-identidade/                (6 skills)
+└── 08-operacoes-produto/                (7 skills)
 ```
+
+Each `SKILL.md` contains / Cada `SKILL.md` contém:
+- **YAML frontmatter** — `name` + `description` (Claude Code uses this to trigger the skill automatically)
+- **Instructions** — framework, data collection, structured output, business rules
+- **Team Integration** — who passes context in, who receives the handoff, handoff protocol
 
 ---
 
-## Licença
+## License / Licença
 
+MIT — use, modify, distribute, sell. Credit is welcome but not required.
 MIT — use, modifique, distribua, venda. Crédito é bem-vindo mas não obrigatório.
 
 ---
 
-**Criado por [Fontiss](https://github.com/fontiss)** — Construído com Claude.
+<div align="center">
+
+**Built with [Claude Code](https://docs.anthropic.com/en/docs/claude-code) by [Fontiss](https://github.com/fontiss)**
+
+*Give it a ⭐ if this helped you — it helps others find it too.*
+*Deixe uma ⭐ se isso te ajudou — ajuda outros a encontrar também.*
+
+</div>

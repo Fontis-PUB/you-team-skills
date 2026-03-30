@@ -49,11 +49,11 @@ O diferencial: elas não são ferramentas isoladas. São um **time integrado** �
 
 ### Option 1 — Download & drag (easiest)
 
-**1.** [Download GUIDE.md](https://github.com/Fontis-PUB/you-team-skills/raw/main/GUIDE.md?download=1) ← click, file saves to your computer
+**1.** Open [GUIDE.md on GitHub](https://github.com/Fontis-PUB/you-team-skills/blob/main/GUIDE.md) → click the **⬇ Download raw file** button (top-right of the file)
 
-**2.** Open [claude.ai](https://claude.ai) → start a new chat → drag the file into the message box (or click the 📎 icon)
+**2.** Open [claude.ai](https://claude.ai) → new chat → drag the downloaded file into the message box (or click 📎)
 
-**3.** Hit send. The Guide asks 3 questions and recommends the right skill for you — with a ready-to-use prompt.
+**3.** Send. The Guide asks 3 questions and recommends the right skill — with a ready-to-use prompt.
 
 ---
 
@@ -61,9 +61,9 @@ O diferencial: elas não são ferramentas isoladas. São um **time integrado** �
 
 Set up once, use forever across all chats:
 
-1. [Download GUIDE.md](https://github.com/Fontis-PUB/you-team-skills/raw/main/GUIDE.md?download=1)
+1. Download GUIDE.md as above
 2. Open [claude.ai](https://claude.ai) → **New Project** → **Project Instructions**
-3. Upload the file (or paste its content)
+3. Upload the file
 4. Save. Done.
 
 Every chat in that project now has the full 56-skill team available.
@@ -73,21 +73,21 @@ Every chat in that project now has the full 56-skill team available.
 
 ### Opção 1 — Baixar e arrastar (mais fácil)
 
-**1.** [Baixar GUIDE.md](https://github.com/Fontis-PUB/you-team-skills/raw/main/GUIDE.md?download=1) ← clique, o arquivo salva no seu computador
+**1.** Abra o [GUIDE.md no GitHub](https://github.com/Fontis-PUB/you-team-skills/blob/main/GUIDE.md) → clique no botão **⬇ Download raw file** (canto superior direito do arquivo)
 
-**2.** Abra o [claude.ai](https://claude.ai) → novo chat → arraste o arquivo para a caixa de mensagem (ou clique no ícone 📎)
+**2.** Abra o [claude.ai](https://claude.ai) → novo chat → arraste o arquivo para a caixa de mensagem (ou clique no 📎)
 
-**3.** Envie. O Guia faz 3 perguntas e recomenda a skill certa para você — com prompt pronto para usar.
+**3.** Envie. O Guia faz 3 perguntas e recomenda a skill certa para você — com prompt pronto.
 
 ---
 
 ### Opção 2 — Melhor configuração: Claude Projects ⭐
 
-Configura uma vez, usa para sempre em todos os chats:
+Configura uma vez, usa para sempre:
 
-1. [Baixar GUIDE.md](https://github.com/Fontis-PUB/you-team-skills/raw/main/GUIDE.md?download=1)
+1. Baixe o GUIDE.md conforme acima
 2. Acesse [claude.ai](https://claude.ai) → **Novo Projeto** → **Instruções do Projeto**
-3. Faça upload do arquivo (ou cole o conteúdo)
+3. Faça upload do arquivo
 4. Salve. Pronto.
 
 Todos os chats daquele projeto terão o time completo de 56 skills disponível.

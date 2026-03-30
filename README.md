@@ -39,36 +39,96 @@ O diferencial: elas não são ferramentas isoladas. São um **time integrado** �
 
 ---
 
-## Use Without Claude Code / Use sem o Claude Code
+## Use on Claude Web or Desktop / Use no Claude Web ou Desktop
+
+> No installation needed — works on **claude.ai**, **Claude desktop app** and any Claude interface. / Sem instalar nada — funciona no **claude.ai**, **app desktop** e qualquer interface Claude.
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-**No Claude Code? No problem.**
+### Quickest start (2 steps)
 
-You can use any skill directly in **claude.ai** or the **Claude desktop app** — no installation needed.
+**1.** Open this link and copy everything (`Ctrl+A` → `Ctrl+C`):
 
-1. Open the `SKILL.md` file of the skill you want (e.g. `01-gestao-trafego/meta-analise-campanha/SKILL.md`)
-2. Copy the entire content
-3. Paste it as your first message in Claude chat
-4. Add your context and run
+```
+https://raw.githubusercontent.com/Fontis-PUB/you-team-skills/main/GUIDE.md
+```
 
-Or use `/guide` — it walks you through everything and recommends the right skill for your situation.
+**2.** Paste as your first message in Claude.
+
+The Guide asks 3 questions and recommends the best skill for your situation — with a ready-to-use prompt.
+
+---
+
+### For a specific skill
+
+**1.** Find the skill in the table below, open its raw link and copy everything.
+
+Example — Meta Ads analysis:
+```
+https://raw.githubusercontent.com/Fontis-PUB/you-team-skills/main/01-gestao-trafego/meta-analise-campanha/SKILL.md
+```
+
+**2.** Paste in Claude + describe your situation.
+
+Done. No account, no install, no code.
+
+---
+
+### Best setup: Claude Projects ⭐
+
+One-time setup, all skills available forever:
+
+1. Open [claude.ai](https://claude.ai) → **New Project**
+2. Click **Project Instructions**
+3. Open the GUIDE.md link above, copy everything, paste there
+4. Save — done.
+
+Now every chat in that project has the full team ready.
 
 </td>
 <td width="50%" valign="top">
 
-**Não tem Claude Code? Sem problema.**
+### Início mais rápido (2 passos)
 
-Você pode usar qualquer skill direto no **claude.ai** ou no **app desktop do Claude** — sem instalar nada.
+**1.** Abra este link e copie tudo (`Ctrl+A` → `Ctrl+C`):
 
-1. Abra o arquivo `SKILL.md` da skill que quer usar (ex: `01-gestao-trafego/meta-analise-campanha/SKILL.md`)
-2. Copie o conteúdo completo
-3. Cole como primeira mensagem no chat do Claude
-4. Adicione seu contexto e use
+```
+https://raw.githubusercontent.com/Fontis-PUB/you-team-skills/main/GUIDE.md
+```
 
-Ou use o `/guide` — ele te pergunta 3 perguntas e recomenda a skill certa para o seu caso.
+**2.** Cole como primeira mensagem no Claude.
+
+O Guia faz 3 perguntas e recomenda a melhor skill para o seu caso — com prompt pronto para usar.
+
+---
+
+### Para uma skill específica
+
+**1.** Encontre a skill na tabela abaixo, abra o link raw e copie tudo.
+
+Exemplo — análise de campanha Meta Ads:
+```
+https://raw.githubusercontent.com/Fontis-PUB/you-team-skills/main/01-gestao-trafego/meta-analise-campanha/SKILL.md
+```
+
+**2.** Cole no Claude + descreva sua situação.
+
+Pronto. Sem conta extra, sem instalar, sem código.
+
+---
+
+### Melhor configuração: Claude Projects ⭐
+
+Configuração única, todas as skills disponíveis para sempre:
+
+1. Acesse [claude.ai](https://claude.ai) → **Novo Projeto**
+2. Clique em **Instruções do Projeto**
+3. Abra o link do GUIDE.md acima, copie tudo e cole lá
+4. Salve — pronto.
+
+Todos os chats daquele projeto terão o time completo disponível.
 
 </td>
 </tr>

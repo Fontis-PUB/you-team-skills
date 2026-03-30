@@ -39,6 +39,43 @@ O diferencial: elas não são ferramentas isoladas. São um **time integrado** �
 
 ---
 
+## Use Without Claude Code / Use sem o Claude Code
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**No Claude Code? No problem.**
+
+You can use any skill directly in **claude.ai** or the **Claude desktop app** — no installation needed.
+
+1. Open the `SKILL.md` file of the skill you want (e.g. `01-gestao-trafego/meta-analise-campanha/SKILL.md`)
+2. Copy the entire content
+3. Paste it as your first message in Claude chat
+4. Add your context and run
+
+Or use `/guide` — it walks you through everything and recommends the right skill for your situation.
+
+</td>
+<td width="50%" valign="top">
+
+**Não tem Claude Code? Sem problema.**
+
+Você pode usar qualquer skill direto no **claude.ai** ou no **app desktop do Claude** — sem instalar nada.
+
+1. Abra o arquivo `SKILL.md` da skill que quer usar (ex: `01-gestao-trafego/meta-analise-campanha/SKILL.md`)
+2. Copie o conteúdo completo
+3. Cole como primeira mensagem no chat do Claude
+4. Adicione seu contexto e use
+
+Ou use o `/guide` — ele te pergunta 3 perguntas e recomenda a skill certa para o seu caso.
+
+</td>
+</tr>
+</table>
+
+---
+
 ## Install in 30s / Instale em 30s
 
 ```bash
@@ -414,6 +451,9 @@ Você roda `/meta-copy-criativo`. Ela já sabe que o problema é o hook e entreg
 <tr>
 <td width="50%" valign="top">
 
+**Do I need Claude Code?**
+No. Open any `SKILL.md`, copy the content, paste into claude.ai or the desktop app. Works on the free plan.
+
 **Do I need to know how to code?**
 No. Install, describe what you need, and the skill delivers the result.
 
@@ -433,6 +473,9 @@ cd claude-code-skills && git pull
 
 </td>
 <td width="50%" valign="top">
+
+**Precisa ter o Claude Code?**
+Não. Abre qualquer `SKILL.md`, copia o conteúdo e cola no claude.ai ou no app desktop. Funciona no plano gratuito.
 
 **Preciso saber programar?**
 Não. Instala, descreve o que precisa, e a skill entrega o resultado.

@@ -1,5 +1,5 @@
 # Contexto da Sessão — Claude Code
-> Atualizado: 2026-03-30 13:35
+> Atualizado: 2026-03-30 13:38
 > Projeto: /Users/brabus/Documents/GitHub/You-team-skills/you-team-skills
 
 ## Branch
@@ -7,6 +7,8 @@ main
 
 ## Últimos 10 commits
 ```
+194f891 fix: replace download link with GitHub blob page + download button instruction
+0dbd2e1 fd
 5d53c65 fix: force file download with ?download=1 on GUIDE.md links
 1c0faf0 docs: simplify web/desktop to download + drag — no copy-paste needed
 67dcec2 docs: simplify web/desktop install — direct URL + Claude Projects setup
@@ -15,18 +17,16 @@ main
 5f40198 refactor: move all content to repo root for instant README visibility
 818fbb6 gogo2
 475644c feat: bilingual README, hero banner SVG, chains diagram, CONTRIBUTING
-ba5a8f3 gogo
 ```
 
 ## Arquivos modificados (não commitados)
 ```
- M .claude/context.md
+Nenhum arquivo modificado
 ```
 
 ## Diff stat HEAD
 ```
- .claude/context.md | 14 ++++++++++----
- 1 file changed, 10 insertions(+), 4 deletions(-)
+Sem diff
 ```
 
 ---

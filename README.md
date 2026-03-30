@@ -49,7 +49,7 @@ O diferencial: elas não são ferramentas isoladas. São um **time integrado** �
 
 ### Option 1 — Download & drag (easiest)
 
-**1.** Open [GUIDE.md on GitHub](https://github.com/Fontis-PUB/you-team-skills/blob/main/GUIDE.md) → click the **⬇ Download raw file** button (top-right of the file)
+**1.** Click **[⬇ Download GUIDE.md](https://fontis-pub.github.io/you-team-skills/download.html)** — the file downloads automatically
 
 **2.** Open [claude.ai](https://claude.ai) → new chat → drag the downloaded file into the message box (or click 📎)
 
@@ -61,7 +61,7 @@ O diferencial: elas não são ferramentas isoladas. São um **time integrado** �
 
 Set up once, use forever across all chats:
 
-1. Download GUIDE.md as above
+1. [⬇ Download GUIDE.md](https://fontis-pub.github.io/you-team-skills/download.html)
 2. Open [claude.ai](https://claude.ai) → **New Project** → **Project Instructions**
 3. Upload the file
 4. Save. Done.
@@ -73,7 +73,7 @@ Every chat in that project now has the full 56-skill team available.
 
 ### Opção 1 — Baixar e arrastar (mais fácil)
 
-**1.** Abra o [GUIDE.md no GitHub](https://github.com/Fontis-PUB/you-team-skills/blob/main/GUIDE.md) → clique no botão **⬇ Download raw file** (canto superior direito do arquivo)
+**1.** Clique em **[⬇ Baixar GUIDE.md](https://fontis-pub.github.io/you-team-skills/download.html)** — o arquivo é baixado automaticamente
 
 **2.** Abra o [claude.ai](https://claude.ai) → novo chat → arraste o arquivo para a caixa de mensagem (ou clique no 📎)
 
@@ -85,7 +85,7 @@ Every chat in that project now has the full 56-skill team available.
 
 Configura uma vez, usa para sempre:
 
-1. Baixe o GUIDE.md conforme acima
+1. [⬇ Baixar GUIDE.md](https://fontis-pub.github.io/you-team-skills/download.html)
 2. Acesse [claude.ai](https://claude.ai) → **Novo Projeto** → **Instruções do Projeto**
 3. Faça upload do arquivo
 4. Salve. Pronto.

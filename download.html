@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baixando GUIDE.md — you-team-skills</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 40px 48px;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+    .icon { font-size: 48px; margin-bottom: 16px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 8px; color: #f0f6fc; }
+    p { font-size: 14px; color: #8b949e; margin-bottom: 24px; line-height: 1.6; }
+    .progress-bar {
+      background: #21262d;
+      border-radius: 6px;
+      height: 6px;
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+    .progress-fill {
+      background: linear-gradient(90deg, #7c3aed, #a855f7);
+      height: 100%;
+      border-radius: 6px;
+      animation: progress 1.2s ease-in-out forwards;
+    }
+    @keyframes progress {
+      from { width: 0%; }
+      to   { width: 100%; }
+    }
+    .status { font-size: 13px; color: #8b949e; }
+    .status.done { color: #3fb950; }
+    .status.error { color: #f85149; }
+    .manual-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 8px 20px;
+      background: #238636;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .manual-link:hover { background: #2ea043; }
+    .back { margin-top: 16px; font-size: 13px; }
+    .back a { color: #58a6ff; text-decoration: none; }
+    .back a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon" id="icon">⬇️</div>
+    <h1>you-team-skills</h1>
+    <p id="desc">Preparando o download do <strong>GUIDE.md</strong>…<br>56 skills de negócios para Claude.</p>
+    <div class="progress-bar" id="progressBar">
+      <div class="progress-fill"></div>
+    </div>
+    <div class="status" id="status">Baixando arquivo…</div>
+    <div id="manualDiv" style="display:none;">
+      <a class="manual-link" id="manualLink" href="#">📥 Clique para baixar manualmente</a>
+    </div>
+    <div class="back">
+      <a href="https://github.com/Fontis-PUB/you-team-skills">← Voltar ao repositório</a>
+    </div>
+  </div>
+
+  <script>
+    const FILE_URL = 'https://raw.githubusercontent.com/Fontis-PUB/you-team-skills/main/GUIDE.md';
+    const FILE_NAME = 'GUIDE.md';
+
+    async function triggerDownload() {
+      try {
+        const response = await fetch(FILE_URL);
+        if (!response.ok) throw new Error('Falha ao buscar o arquivo');
+
+        const blob = await response.blob();
+        const url  = URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href     = url;
+        a.download = FILE_NAME;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+
+        // Sucesso
+        document.getElementById('icon').textContent   = '✅';
+        document.getElementById('status').textContent = 'Download iniciado!';
+        document.getElementById('status').className   = 'status done';
+        document.getElementById('desc').innerHTML     = '<strong>GUIDE.md</strong> foi baixado.<br>Agora arraste para o Claude ou adicione ao Projeto.';
+        document.getElementById('progressBar').style.display = 'none';
+
+        // Link manual como fallback visível
+        showManual(url);
+      } catch (err) {
+        document.getElementById('icon').textContent   = '⚠️';
+        document.getElementById('status').textContent = 'Não foi possível baixar automaticamente.';
+        document.getElementById('status').className   = 'status error';
+        document.getElementById('progressBar').style.display = 'none';
+        showManual(FILE_URL);
+      }
+    }
+
+    function showManual(href) {
+      const div  = document.getElementById('manualDiv');
+      const link = document.getElementById('manualLink');
+      link.href  = href;
+      div.style.display = 'block';
+    }
+
+    // Inicia logo após o carregamento
+    window.addEventListener('load', triggerDownload);
+  </script>
+</body>
+</html>
